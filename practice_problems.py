@@ -13,4 +13,12 @@ from math import pi
 #
 # print(last_name + " " + first_name)
 
+"""Create an input with 5 comma separated number and make them into a list and
+a tuple."""
+values = input("Please input 4 values separated by commas: ")
 
+list = values.split(',')
+tuple = tuple(list)
+
+print('List : ', list)
+print('Tuple : ', tuple)
