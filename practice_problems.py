@@ -13,12 +13,22 @@ from math import pi
 #
 # print(last_name + " " + first_name)
 
-"""Create an input with 5 comma separated number and make them into a list and
-a tuple."""
-values = input("Please input 4 values separated by commas: ")
+# """Create an input with 5 comma separated number and make them into a list and
+# a tuple."""
+# values = input("Please input 4 values separated by commas: ")
+#
+# list = values.split(',')
+# tuple = tuple(list)
+#
+# print('List : ', list)
+# print('Tuple : ', tuple)
 
-list = values.split(',')
-tuple = tuple(list)
+"""Write a Python program to accept a filename 
+from the user and print the extension of that"""
 
-print('List : ', list)
-print('Tuple : ', tuple)
+filename = input("Please enter the filename that you want: ")
+
+file_ext = filename.split(".")
+
+print("The extension of the file is " + repr(file_ext[-1]))
+
