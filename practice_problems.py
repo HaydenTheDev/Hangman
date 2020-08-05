@@ -99,10 +99,10 @@ from math import pi
 """Write a Python program to get the volume of a sphere with radius 6."""
 import math
 
-radius = float(input("Enter the radious of a sphere: "))
+radius = float(input("Enter the radius of the sphere: "))
 
 cube = math.pow(radius, 3)
 
 volume = float(4/3)*pi*cube
-print(volume)
+print("The volume of the this sphere is: {}".format(volume))
 
