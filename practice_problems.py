@@ -23,12 +23,30 @@ from math import pi
 # print('List : ', list)
 # print('Tuple : ', tuple)
 
-"""Write a Python program to accept a filename 
-from the user and print the extension of that"""
+# """Write a Python program to accept a filename
+# from the user and print the extension of that"""
+#
+# filename = input("Please enter the filename that you want: ")
+#
+# file_ext = filename.split(".")
+#
+# print("The extension of the file is " + repr(file_ext[-1]))
 
-filename = input("Please enter the filename that you want: ")
 
-file_ext = filename.split(".")
+# """Write a Python program to display the
+# first and last colors from the following list."""
+#
+# f_name = input("Please enter your first name: ")
+# l_name = input("Please enter your last name: ")
+#
+# print(l_name + " " + f_name)
 
-print("The extension of the file is " + repr(file_ext[-1]))
 
+"""Write a Python program to 
+display the examination schedule. 
+(extract the date from exam_st_date)"""
+
+exam_st_date = (11, 12, 2014)
+
+
+print("The examination will start from: %i/%i/%i"%exam_st_date)
