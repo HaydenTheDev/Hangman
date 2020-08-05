@@ -97,5 +97,12 @@ from math import pi
 # print(difference)
 
 """Write a Python program to get the volume of a sphere with radius 6."""
+import math
 
+radius = float(input("Enter the radious of a sphere: "))
+
+cube = math.pow(radius, 3)
+
+volume = float(4/3)*pi*cube
+print(volume)
 
