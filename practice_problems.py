@@ -133,13 +133,57 @@ Note : Use 'calendar' module."""
 """Write a Python program to calculate the sum of three given numbers,
  if the values are equal then return three times of their sum. """
 
-number_1 = float(input("Please enter the first number: "))
-number_2 = float(input("Please enter the second number: "))
-number_3 = float(input("Please enter the third number: "))
+# number_1 = float(input("Please enter the first number: "))
+# number_2 = float(input("Please enter the second number: "))
+# number_3 = float(input("Please enter the third number: "))
+#
+# number_sum = number_1 + number_2 + number_3
+#
+# if number_1 == number_2 == number_3:
+#     print("These numbers cubed is : {}".format(number_sum ** 3))
+# else:
+#     print("The sum of these numbers is: {}".format(number_sum))
 
-number_sum = number_1 + number_2 + number_3
+"""Write a Python program to get a new string from a given string where 
+"Is" has been added to the front. If the given string already begins with 
+"Is" then return the string unchanged."""
 
-if number_1 == number_2 == number_3:
-    print("These numbers cubed is : {}".format(number_sum ** 3))
-else:
-    print("The sum of these numbers is: {}".format(number_sum))
+
+# def new_string(str):
+#     if len(str) >= 2 and str[:2] == "Is":
+#         return str
+#     return "Is" + str
+#
+#
+# print(new_string("array"))
+# print(new_string("Isarray"))
+
+"""Write a Python program to get a string which
+ is n (non-negative integer) copies of a given string."""
+
+
+# def greater_string(str, n):
+#     result = ""
+#     for i in range(n):
+#         result = result + str
+#     return result
+#
+#
+# print(greater_string("this is hayden\n", 10))
+# print(greater_string("this is Bazor\n", 10))
+
+
+"""Write a Python program to find whether a given number (accept from
+ the user) is even or odd, print out an appropriate message to the user."""
+
+user_input = int(input("Please enter a even or odd number: "))
+
+
+def odd_even(number):
+    if number % 2 == 0:
+        print("The number you chose is even.")
+    else:
+        print("This number is odd.")
+
+
+odd_even(user_input)
