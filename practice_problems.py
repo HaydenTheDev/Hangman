@@ -96,13 +96,25 @@ from math import pi
 #
 # print(difference)
 
-"""Write a Python program to get the volume of a sphere with radius 6."""
-import math
+# """Write a Python program to get the volume of a sphere with radius 6."""
+# import math
+#
+# radius = float(input("Enter the radius of the sphere: "))
+#
+# cube = math.pow(radius, 3)
+#
+# volume = float(4/3)*pi*cube
+# print("The volume of the this sphere is: {}".format(volume))
 
-radius = float(input("Enter the radius of the sphere: "))
-
-cube = math.pow(radius, 3)
-
-volume = float(4/3)*pi*cube
-print("The volume of the this sphere is: {}".format(volume))
+# """Write a Python program to get the difference between a given number and 17,
+#  if the number is greater than 17 return double the absolute difference. """
+#
+# number_one = int(input("Enter a number: "))
+#
+# difference = abs(number_one - 17)
+#
+# if number_one > 17:
+#     print(difference * 2)
+# else:
+#     print("nevermind")
 
