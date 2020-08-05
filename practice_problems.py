@@ -72,11 +72,30 @@ from math import pi
 # print(repr.__doc__)
 # print(next.__doc__)
 
-"""Write a Python program to print the calendar of a given month and year.
-Note : Use 'calendar' module."""
+# """Write a Python program to print the calendar of a given month and year.
+# Note : Use 'calendar' module."""
+#
+# import calendar
+#
+# y = int(input("Enter the year like ex. 1995: "))
+# m = int(input("Enter the month like ex. 5: "))
+#
+# print(calendar.month(y, m))
 
-import calendar
+"""Write a Python program to print the following here document."""
 
-current = calendar.month(2020, 8, w=0, l=0)
+# its a doc string like above.
 
-print("The current month is \n{}".format(current))
+# """Write a Python program to calculate number of days between two dates."""
+# import datetime
+#
+# date_one = datetime.date(1995, 5, 6)
+# date_two = datetime.date(2020, 8, 4)
+#
+# difference = date_two - date_one
+#
+# print(difference)
+
+"""Write a Python program to get the volume of a sphere with radius 6."""
+
+
