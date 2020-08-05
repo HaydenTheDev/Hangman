@@ -65,9 +65,18 @@ from math import pi
 # print(calculate)
 
 
-"""Write a Python program to print the documents (syntax, description 
-etc.) of Python built-in function(s)."""
+# """Write a Python program to print the documents (syntax, description
+# etc.) of Python built-in function(s)."""
+#
+# print(abs.__doc__)
+# print(repr.__doc__)
+# print(next.__doc__)
 
-print(abs.__doc__)
-print(repr.__doc__)
-print(next.__doc__)
+"""Write a Python program to print the calendar of a given month and year.
+Note : Use 'calendar' module."""
+
+import calendar
+
+current = calendar.month(2020, 8, w=0, l=0)
+
+print("The current month is \n{}".format(current))
