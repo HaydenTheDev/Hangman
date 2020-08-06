@@ -176,14 +176,50 @@ Note : Use 'calendar' module."""
 """Write a Python program to find whether a given number (accept from
  the user) is even or odd, print out an appropriate message to the user."""
 
-user_input = int(input("Please enter a even or odd number: "))
+# user_input = int(input("Please enter a even or odd number: "))
+#
+#
+# def odd_even(number):
+#     if number % 2 == 0:
+#         print("The number you chose is even.")
+#     else:
+#         print("This number is odd.")
+#
+#
+# odd_even(user_input)
 
 
-def odd_even(number):
-    if number % 2 == 0:
-        print("The number you chose is even.")
-    else:
-        print("This number is odd.")
+"""Write a Python program to count the number 4 in a given list"""
 
 
-odd_even(user_input)
+# def list_count(n):
+#     count = 0
+#     for number in n:
+#         if number == 4:
+#             count += 1
+#     return print(count)
+#
+#
+# list_count([2, 3, 4, 4, 6, 4])
+# list_count([2, 4, 4, 4, 4, 4])
+
+
+"""Write a Python program to get the n (non-negative integer) 
+copies of the first 2 characters of a given string. 
+Return the n copies of the whole string if the length is less than 2."""
+
+
+def substring_copy(str, n):
+    flen = 2
+    if flen > len(str):
+        flen = len(str)
+    substr = str[:flen]
+
+    result = ""
+    for i in range(n):
+        result = result + substr
+    return result
+
+
+print(substring_copy('abcdef', 2))
+print(substring_copy('p', 3));
