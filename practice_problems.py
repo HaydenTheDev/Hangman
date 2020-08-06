@@ -228,15 +228,32 @@ Return the n copies of the whole string if the length is less than 2."""
 a passed letter is a vowel or not. """
 
 
-user_input = input("Please enter a letter: ")
+# user_input = input("Please enter a letter: ")
+#
+#
+# def vowel_or_not(letter):
+#     vowel = "aeiou"
+#     if letter in vowel:
+#         print("This is a vowel")
+#     else:
+#         print("This is a consonant")
+#
+#
+# vowel_or_not(user_input)
 
 
-def vowel_or_not(letter):
-    vowel = "aeiou"
-    if letter in vowel:
-        print("This is a vowel")
+"""Write a Python program to check whether a 
+specified value is contained in a group of values. """
+
+my_guess = int(input("Please check for a number: "))
+
+
+def numbers(n):
+    if my_guess in n:
+        return print(True)
     else:
-        print("This is a consonant")
+        return print(False)
 
 
-vowel_or_not(user_input)
+
+numbers([6, 5, 4, 2, 1, 13, 3])
