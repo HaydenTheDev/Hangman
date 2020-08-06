@@ -245,15 +245,33 @@ a passed letter is a vowel or not. """
 """Write a Python program to check whether a 
 specified value is contained in a group of values. """
 
-my_guess = int(input("Please check for a number: "))
+# my_guess = int(input("Please check for a number: "))
+#
+#
+# def numbers(n):
+#     if my_guess in n:
+#         return print(True)
+#     else:
+#         return print(False)
 
 
-def numbers(n):
-    if my_guess in n:
-        return print(True)
-    else:
-        return print(False)
+# numbers([6, 5, 4, 2, 1, 13, 3])
 
 
+"""Write a Python program to create a histogram
+ from a given list of integers."""
 
-numbers([6, 5, 4, 2, 1, 13, 3])
+
+def histogram( items ):
+    for n in items:
+        output = ''
+        times = n
+        while( times > 0 ):
+            output += '*'
+            times = times - 1
+        print(output)
+
+
+histogram([2, 3, 6, 5])
+
+
