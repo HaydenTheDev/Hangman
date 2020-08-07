@@ -508,9 +508,28 @@ platform and release information"""
 
 
 """Write a Python program to list all files in a directory in Python."""
-from os import listdir
-from os.path import isfile, join
-files_list = [f for f in listdir('/Users/power/Downloads') if isfile(join('/Users/power/Downloads', f))]
-print(files_list)
+# from os import listdir
+# from os.path import isfile, join
+# files_list = [f for f in listdir('/Users/power/Downloads') if isfile(join('/Users/power/Downloads', f))]
+# print(files_list)
 
+
+"""Write a Python program to determine profiling of Python programs."""
+
+# import cProfile
+# def sum():
+#     print(1+2)
+# cProfile.run('sum()')
+
+"""Write a Python program to get the current username."""
+# import getpass
+# print(getpass.getuser())
+
+
+"""Write a Python to find local IP addresses using Python's stdlib"""
+import socket
+print([l for l in ([ip for ip in socket.gethostbyname_ex(socket.gethostname())[2]
+    if not ip.startswith("127.")][:1], [[(s.connect(('8.8.8.8', 53)),
+        s.getsockname()[0], s.close()) for s in [socket.socket(socket.AF_INET,
+            socket.SOCK_DGRAM)]][0][1]]) if l][0][0])
 
