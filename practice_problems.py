@@ -455,9 +455,17 @@ like name, age, address in three different lines."""
 specified principal amount, rate of interest, and a number of years."""
 
 
-def future_amount(amount, interest, years):
-    rate = float(amount*((1+(0.01*interest)) ** years))
-    print(round(rate))
+# def future_amount(amount, interest, years):
+#     rate = float(amount*((1+(0.01*interest)) ** years))
+#     print(round(rate))
+#
+#
+# future_amount(10000, 3.5, 7)
 
 
-future_amount(10000, 3.5, 7)
+"""Write a Python program to check whether a file exists."""
+
+import os.path
+
+open('name.txt', 'w')
+print(os.path.isfile('name.txt'))
