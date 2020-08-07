@@ -391,20 +391,33 @@ However, if two values are equal sum will be zero."""
 """Write a Python program that will return true if the two given
  integer values are equal or their sum or difference is 5."""
 
+#
+# def equal_nums(x, y):
+#     nums_sum = x + y
+#     diff = x - y
+#     diff_two = y - x
+#
+#     if x == y or nums_sum == 5 or abs(diff == 5) or abs(diff_two == 5):
+#         return print(True)
+#     else:
+#         return print(False)
+#
+#
+# equal_nums(5, 5)
+# equal_nums(1, 6)
+# equal_nums(2, 3)
+# equal_nums(6, 1)
+# equal_nums(4, 6)
 
-def equal_nums(x, y):
-    nums_sum = x + y
-    diff = x - y
-    diff_two = y - x
 
-    if x == y or nums_sum == 5 or abs(diff == 5) or abs(diff_two == 5):
-        return print(True)
-    else:
-        return print(False)
+"""Write a Python program to add two objects
+ if both objects are an integer type."""
 
 
-equal_nums(5, 5)
-equal_nums(1, 6)
-equal_nums(2, 3)
-equal_nums(6, 1)
-equal_nums(4, 6)
+def add_numbers(a, b):
+    if not (isinstance(a, int) and isinstance(b, int)):
+        raise TypeError("Inputs must be integers")
+    return a + b
+
+
+print(add_numbers(10, 20))
