@@ -413,11 +413,28 @@ However, if two values are equal sum will be zero."""
 """Write a Python program to add two objects
  if both objects are an integer type."""
 
+#
+# def add_numbers(a, b):
+#     if not (isinstance(a, int) and isinstance(b, int)):
+#         raise TypeError("Inputs must be integers")
+#     return a + b
+#
+#
+# print(add_numbers(10, 20))
 
-def add_numbers(a, b):
-    if not (isinstance(a, int) and isinstance(b, int)):
-        raise TypeError("Inputs must be integers")
-    return a + b
+
+"""Write a Python program to display your details 
+like name, age, address in three different lines."""
 
 
-print(add_numbers(10, 20))
+name = input("Please enter your name: ")
+age = input("Please enter your age: ")
+address = input("Please enter your address: ")
+
+
+def info(n, a, ad):
+    print("Name: {}\nAge: {}\nAddress: {}".format(n, a, ad))
+    return
+
+
+info(name, age, address)
