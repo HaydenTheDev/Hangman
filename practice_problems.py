@@ -449,3 +449,15 @@ like name, age, address in three different lines."""
 #
 #
 # program(4, 3)
+
+
+"""Write a Python program to compute the future value of a 
+specified principal amount, rate of interest, and a number of years."""
+
+
+def future_amount(amount, interest, years):
+    rate = float(amount*((1+(0.01*interest)) ** years))
+    print(round(rate))
+
+
+future_amount(10000, 3.5, 7)
