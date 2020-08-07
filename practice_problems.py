@@ -324,12 +324,34 @@ in a list into a string and return it."""
  triangle and compute the area."""
 
 
-def triangle(b, h):
-    area = (b*h) / 2
+# def triangle(b, h):
+#     area = (b*h) / 2
+#
+#     print("The area of the triangle is: {}".format(area))
+#
+#
+# triangle(7, 4)
 
-    print("The area of the triangle is: {}".format(area))
+
+"""Write a Python program to compute the greatest common
+ divisor (GCD) of two positive integers."""
 
 
-triangle(7, 4)
-
-
+# first_input = int(input("Please enter a positive number: "))
+# second_input = int(input("Please enter a positive number: "))
+#
+#
+# def gcd(x, y):
+#     _gcd = 1
+#
+#     if x % y == 0:
+#         return y
+#
+#     for i in range(int(y / 2), 0, -1):
+#         if x % i == 0 and y % i == 0:
+#             _gcd = i
+#             break
+#     return _gcd
+#
+#
+# print(gcd(first_input, second_input))
