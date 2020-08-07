@@ -314,10 +314,22 @@ in a list into a string and return it."""
  colors from color_list_1 which are not present in color_list_2."""
 
 
-list_one = {"Halo", "Fallout", "RocketLeague", "OverWatch", "WarZone", "WoW"}
-list_two = {"Halo", "Fallout", "RocketLeague", "OverWatch"}
+# list_one = {"Halo", "Fallout", "RocketLeague", "OverWatch", "WarZone", "WoW"}
+# list_two = {"Halo", "Fallout", "RocketLeague", "OverWatch"}
+#
+# print(list_one.difference(list_two))
 
-print(list_one.difference(list_two))
 
+"""Write a Python program that will accept the base and height of a
+ triangle and compute the area."""
+
+
+def triangle(b, h):
+    area = (b*h) / 2
+
+    print("The area of the triangle is: {}".format(area))
+
+
+triangle(7, 4)
 
 
