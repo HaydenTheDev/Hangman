@@ -262,16 +262,30 @@ specified value is contained in a group of values. """
  from a given list of integers."""
 
 
-def histogram( items ):
-    for n in items:
-        output = ''
-        times = n
-        while( times > 0 ):
-            output += '*'
-            times = times - 1
-        print(output)
+# def histogram(items):
+#     for n in items:
+#         output = ''
+#         times = n
+#         while times > 0:
+#             output += '$'
+#             times = times - 1
+#         print(output)
+#
+#
+# histogram([2, 4, 66, 3])
 
 
-histogram([2, 3, 6, 5])
+"""Write a Python program to concatenate all elements 
+in a list into a string and return it."""
+
+
+def concatenate(s):
+    result = ""
+    for words in s:
+        result += str(words)
+    return result
+
+
+print(concatenate(["Hayden ", "Is ", "My ", "Name ", 1995]))
 
 
