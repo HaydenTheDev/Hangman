@@ -427,14 +427,25 @@ However, if two values are equal sum will be zero."""
 like name, age, address in three different lines."""
 
 
-name = input("Please enter your name: ")
-age = input("Please enter your age: ")
-address = input("Please enter your address: ")
+# name = input("Please enter your name: ")
+# age = input("Please enter your age: ")
+# address = input("Please enter your address: ")
+#
+#
+# def info(n, a, ad):
+#     print("Name: {}\nAge: {}\nAddress: {}".format(n, a, ad))
+#     return
+#
+#
+# info(name, age, address)
 
 
-def info(n, a, ad):
-    print("Name: {}\nAge: {}\nAddress: {}".format(n, a, ad))
-    return
+"""Write a Python program to solve (x + y) * (x + y). """
 
 
-info(name, age, address)
+# def program(x, y):
+#     function = ((x + y) * (x + y))
+#     print(function)
+#
+#
+# program(4, 3)
