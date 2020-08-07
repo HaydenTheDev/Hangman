@@ -355,3 +355,19 @@ in a list into a string and return it."""
 #
 #
 # print(gcd(first_input, second_input))
+
+
+"""Write a Python program to sum of three given integers. 
+However, if two values are equal sum will be zero."""
+
+
+def sum_numbers(x, y, z):
+    my_sum = 0
+    if x == y or x == z or y == z:
+        print(my_sum)
+    else:
+        print(x + y + z)
+    return my_sum
+
+
+sum_numbers(13, 6, 8)
