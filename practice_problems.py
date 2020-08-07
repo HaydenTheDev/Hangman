@@ -535,6 +535,17 @@ platform and release information"""
 
 
 """Write a python program to find the sum of the first n positive integers."""
-n = int(input("Input a number: "))
-sum_num = (n * (n + 1)) / 2
-print(sum_num)
+# n = int(input("Input a number: "))
+# sum_num = (n * (n + 1)) / 2
+# print(sum_num)
+
+
+"""Write a Python program to convert height
+ (in feet and inches) to centimeters."""
+
+feet_inches = float(input("Enter a number in feet and inches: "))
+original = feet_inches
+
+feet_inches = feet_inches * 30.48
+
+print("{} feet is equal to: {} centimeters.".format(original, feet_inches))
