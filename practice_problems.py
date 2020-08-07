@@ -537,12 +537,30 @@ platform and release information"""
 """Write a Python program to calculate the 
 hypotenuse of a right angled triangle."""
 
-import math
+# import math
+#
+# a = float(input("Please enter value one: "))
+# val_one = a
+# b = float(input("Please enter value two: "))
+# val_two = b
+# c = math.sqrt((a ** 2) + (b ** 2))
+# print("The Hypotenuse of the right angle with values {} and {} is: {}"
+#       .format(val_one, val_two, c))
 
-a = float(input("Please enter value one: "))
-val_one = a
-b = float(input("Please enter value two: "))
-val_two = b
-c = math.sqrt((a ** 2) + (b ** 2))
-print("The Hypotenuse of the right angle with values {} and {} is: {}"
-      .format(val_one, val_two, c))
+
+"""Write a Python program to convert the 
+distance (in feet) to inches, yards, and miles."""
+
+
+# feet_input = float(input("Please enter a value for feet: "))
+# feet = feet_input
+#
+# inches = round(feet_input * 12, 2)
+# yards = round(feet_input * 0.333333, 2)
+# miles = round(feet_input * 0.000189394, 5)
+#
+#
+# print("{} feet is equal to {} inches, {} yards and {} miles."
+#       .format(feet, inches, yards, miles))
+
+
