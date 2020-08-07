@@ -148,7 +148,6 @@ Note : Use 'calendar' module."""
 "Is" has been added to the front. If the given string already begins with 
 "Is" then return the string unchanged."""
 
-
 # def new_string(str):
 #     if len(str) >= 2 and str[:2] == "Is":
 #         return str
@@ -160,7 +159,6 @@ Note : Use 'calendar' module."""
 
 """Write a Python program to get a string which
  is n (non-negative integer) copies of a given string."""
-
 
 # def greater_string(str, n):
 #     result = ""
@@ -191,7 +189,6 @@ Note : Use 'calendar' module."""
 
 """Write a Python program to count the number 4 in a given list"""
 
-
 # def list_count(n):
 #     count = 0
 #     for number in n:
@@ -207,7 +204,6 @@ Note : Use 'calendar' module."""
 """Write a Python program to get the n (non-negative integer) 
 copies of the first 2 characters of a given string. 
 Return the n copies of the whole string if the length is less than 2."""
-
 
 # def substring_copy(str, n):
 #     flen = 2
@@ -226,7 +222,6 @@ Return the n copies of the whole string if the length is less than 2."""
 
 """Write a Python program to test whether 
 a passed letter is a vowel or not. """
-
 
 # user_input = input("Please enter a letter: ")
 #
@@ -261,7 +256,6 @@ specified value is contained in a group of values. """
 """Write a Python program to create a histogram
  from a given list of integers."""
 
-
 # def histogram(items):
 #     for n in items:
 #         output = ''
@@ -278,7 +272,6 @@ specified value is contained in a group of values. """
 """Write a Python program to concatenate all elements 
 in a list into a string and return it."""
 
-
 # def concatenate(s):
 #     result = ""
 #     for words in s:
@@ -292,7 +285,6 @@ in a list into a string and return it."""
 """Write a Python program to print all even numbers from a given
  numbers list in the same order and stop the printing if any 
  numbers that come after 237 in the sequence."""
-
 
 # def ordered_numbers(n):
 #     for numbers in n:
@@ -313,7 +305,6 @@ in a list into a string and return it."""
 """Write a Python program to print out a set containing all the
  colors from color_list_1 which are not present in color_list_2."""
 
-
 # list_one = {"Halo", "Fallout", "RocketLeague", "OverWatch", "WarZone", "WoW"}
 # list_two = {"Halo", "Fallout", "RocketLeague", "OverWatch"}
 #
@@ -322,7 +313,6 @@ in a list into a string and return it."""
 
 """Write a Python program that will accept the base and height of a
  triangle and compute the area."""
-
 
 # def triangle(b, h):
 #     area = (b*h) / 2
@@ -335,7 +325,6 @@ in a list into a string and return it."""
 
 """Write a Python program to compute the greatest common
  divisor (GCD) of two positive integers."""
-
 
 # first_input = int(input("Please enter a positive number: "))
 # second_input = int(input("Please enter a positive number: "))
@@ -359,7 +348,6 @@ in a list into a string and return it."""
 
 """Write a Python program to sum of three given integers. 
 However, if two values are equal sum will be zero."""
-
 
 # def sum_numbers(x, y, z):
 #     my_sum = 0
@@ -426,7 +414,6 @@ However, if two values are equal sum will be zero."""
 """Write a Python program to display your details 
 like name, age, address in three different lines."""
 
-
 # name = input("Please enter your name: ")
 # age = input("Please enter your age: ")
 # address = input("Please enter your address: ")
@@ -442,7 +429,6 @@ like name, age, address in three different lines."""
 
 """Write a Python program to solve (x + y) * (x + y). """
 
-
 # def program(x, y):
 #     function = ((x + y) * (x + y))
 #     print(function)
@@ -453,7 +439,6 @@ like name, age, address in three different lines."""
 
 """Write a Python program to compute the future value of a 
 specified principal amount, rate of interest, and a number of years."""
-
 
 # def future_amount(amount, interest, years):
 #     rate = float(amount*((1+(0.01*interest)) ** years))
@@ -481,7 +466,6 @@ shell is executing in 32bit or 64bit mode on OS?"""
 """Write a Python program to get OS name,
 platform and release information"""
 
-
 # import platform
 # import os
 # print(os.name)
@@ -500,7 +484,6 @@ platform and release information"""
 
 
 """Write a Python program to parse a string to Float or Integer."""
-
 
 # n = "246.2458"
 # print(float(n))
@@ -543,9 +526,23 @@ platform and release information"""
 """Write a Python program to convert height
  (in feet and inches) to centimeters."""
 
-feet_inches = float(input("Enter a number in feet and inches: "))
-original = feet_inches
+# feet_inches = float(input("Enter a number in feet and inches: "))
+# original = feet_inches
+#
+# feet_inches = feet_inches * 30.48
+#
+# print("{} feet is equal to: {} centimeters.".format(original, feet_inches))
 
-feet_inches = feet_inches * 30.48
 
-print("{} feet is equal to: {} centimeters.".format(original, feet_inches))
+"""Write a Python program to calculate the 
+hypotenuse of a right angled triangle."""
+
+import math
+
+a = float(input("Please enter value one: "))
+val_one = a
+b = float(input("Please enter value two: "))
+val_two = b
+c = math.sqrt((a ** 2) + (b ** 2))
+print("The Hypotenuse of the right angle with values {} and {} is: {}"
+      .format(val_one, val_two, c))
