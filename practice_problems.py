@@ -497,3 +497,20 @@ platform and release information"""
 """Write a Python program to find out the number of CPUs using."""
 # import multiprocessing
 # print(multiprocessing.cpu_count())
+
+
+"""Write a Python program to parse a string to Float or Integer."""
+
+
+# n = "246.2458"
+# print(float(n))
+# print(int(float(n)))
+
+
+"""Write a Python program to list all files in a directory in Python."""
+from os import listdir
+from os.path import isfile, join
+files_list = [f for f in listdir('/Users/power/Downloads') if isfile(join('/Users/power/Downloads', f))]
+print(files_list)
+
+
