@@ -361,13 +361,28 @@ in a list into a string and return it."""
 However, if two values are equal sum will be zero."""
 
 
-def sum_numbers(x, y, z):
-    my_sum = 0
-    if x == y or x == z or y == z:
-        print(my_sum)
+# def sum_numbers(x, y, z):
+#     my_sum = 0
+#     if x == y or x == z or y == z:
+#         print(my_sum)
+#     else:
+#         print(x + y + z)
+#     return my_sum
+#
+#
+# sum_numbers(13, 6, 8)
+
+
+"""Write a Python program to sum of two given integers.
+ However, if the sum is between 15 to 20 it will return 20."""
+
+
+def two_sum(x, y):
+    my_sum = x + y
+    if 15 <= my_sum <= 20:  # or if my_sum in range(15, 20):
+        return print(20)
     else:
-        print(x + y + z)
-    return my_sum
+        return print(my_sum)
 
 
-sum_numbers(13, 6, 8)
+two_sum(124125324324235, 12312412412421)
