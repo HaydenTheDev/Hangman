@@ -474,5 +474,26 @@ specified principal amount, rate of interest, and a number of years."""
 """Write a Python program to determine whether a Python 
 shell is executing in 32bit or 64bit mode on OS?"""
 
-import struct
-print(struct.calcsize("P") * 8)
+# import struct
+# print(struct.calcsize("P") * 8)
+
+
+"""Write a Python program to get OS name,
+platform and release information"""
+
+
+# import platform
+# import os
+# print(os.name)
+# print(platform.system())
+# print(platform.release())
+
+
+"""Write a Python program to locate Python site-packages."""
+# import site
+# print(site.getsitepackages())
+
+
+"""Write a Python program to find out the number of CPUs using."""
+# import multiprocessing
+# print(multiprocessing.cpu_count())
