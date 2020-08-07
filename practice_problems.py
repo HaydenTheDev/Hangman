@@ -465,7 +465,14 @@ specified principal amount, rate of interest, and a number of years."""
 
 """Write a Python program to check whether a file exists."""
 
-import os.path
+# import os.path
+#
+# open('name.txt', 'w')
+# print(os.path.isfile('name.txt'))
 
-open('name.txt', 'w')
-print(os.path.isfile('name.txt'))
+
+"""Write a Python program to determine whether a Python 
+shell is executing in 32bit or 64bit mode on OS?"""
+
+import struct
+print(struct.calcsize("P") * 8)
