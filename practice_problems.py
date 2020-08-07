@@ -376,13 +376,35 @@ However, if two values are equal sum will be zero."""
 """Write a Python program to sum of two given integers.
  However, if the sum is between 15 to 20 it will return 20."""
 
+#
+# def two_sum(x, y):
+#     my_sum = x + y
+#     if 15 <= my_sum <= 20:  # or if my_sum in range(15, 20):
+#         return print(20)
+#     else:
+#         return print(my_sum)
+#
+#
+# two_sum(124125324324235, 12312412412421)
 
-def two_sum(x, y):
-    my_sum = x + y
-    if 15 <= my_sum <= 20:  # or if my_sum in range(15, 20):
-        return print(20)
+
+"""Write a Python program that will return true if the two given
+ integer values are equal or their sum or difference is 5."""
+
+
+def equal_nums(x, y):
+    nums_sum = x + y
+    diff = x - y
+    diff_two = y - x
+
+    if x == y or nums_sum == 5 or abs(diff == 5) or abs(diff_two == 5):
+        return print(True)
     else:
-        return print(my_sum)
+        return print(False)
 
 
-two_sum(124125324324235, 12312412412421)
+equal_nums(5, 5)
+equal_nums(1, 6)
+equal_nums(2, 3)
+equal_nums(6, 1)
+equal_nums(4, 6)
