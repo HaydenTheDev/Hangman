@@ -564,3 +564,28 @@ distance (in feet) to inches, yards, and miles."""
 #       .format(feet, inches, yards, miles))
 
 
+""""""
+second = 1
+
+minute = (second * 60)
+
+hour = (minute * 60)
+
+day = (hour * 24)
+
+month = (day * 30)
+
+year = (month * 12)
+
+
+print(" {} seconds in a year\n {}: seconds in a month"
+      "\n {}: seconds in a day\n {}: seconds in a hour\n {}: seconds in a minute\n"
+      .format(year, month, day, hour, minute))
+
+
+
+
+
+
+
+
