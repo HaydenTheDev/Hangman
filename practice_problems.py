@@ -796,9 +796,17 @@ distance (in feet) to inches, yards, and miles."""
 
 """Write a Python program to get the ASCII value of a character."""
 
-print()
-print(ord('a'))
-print(ord('A'))
-print(ord('1'))
-print(ord('@'))
+# print()
+# print(ord('a'))
+# print(ord('A'))
+# print(ord('1'))
+# print(ord('@'))
+# print()
+
+
+"""Write a Python program to get the size of a file."""
+
+import os
+file_size = os.path.getsize('name.txt')
+print("\nThe size of name.txt is: ", file_size, "Bytes")
 print()
