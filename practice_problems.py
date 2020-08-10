@@ -565,27 +565,28 @@ distance (in feet) to inches, yards, and miles."""
 
 
 """"""
-second = 1
+# second = 1
 
-minute = (second * 60)
-
-hour = (minute * 60)
-
-day = (hour * 24)
-
-month = (day * 30)
-
-year = (month * 12)
-
-
-print(" {} seconds in a year\n {}: seconds in a month"
-      "\n {}: seconds in a day\n {}: seconds in a hour\n {}: seconds in a minute\n"
-      .format(year, month, day, hour, minute))
-
-
+# minute = (second * 60)
+#
+# hour = (minute * 60)
+#
+# day = (hour * 24)
+#
+# month = (day * 30)
+#
+# year = (month * 12)
+#
+#
+# print(" {} seconds in a year\n {}: seconds in a month"
+#       "\n {}: seconds in a day\n {}: seconds in a hour\n {}: seconds in a minute\n"
+#       .format(year, month, day, hour, minute))
 
 
+"""Write a Python program to get file creation and modification date/times."""
 
 
-
+import os.path, time
+print("Last modified: %s" % time.ctime(os.path.getmtime("name.txt")))
+print("Created: %s" % time.ctime(os.path.getctime("name.txt")))
 
