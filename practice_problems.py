@@ -841,11 +841,23 @@ distance (in feet) to inches, yards, and miles."""
 # print("x = {} and y = {}".format(x, y))
 
 
-
 """Write a Python program to convert a byte string to a list of integers."""
 
 
-x = b'abcgsiodugosugs98w7598237520392ugowih(^&&*^%*&('
-print()
-print(list(x))
-print()
+# x = b'abcgsiodugosugs98w7598237520392ugowih(^&&*^%*&('
+# print()
+# print(list(x))
+# print()
+
+
+"""Write a Python program to check whether a string is numeric. """
+
+
+my_string = "It was very hot outside today."
+my_string_2 = "1995"
+
+is_string = my_string.isnumeric()
+is_string_2 = my_string_2.isnumeric()
+
+print(is_string)
+print(is_string_2)
