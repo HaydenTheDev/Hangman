@@ -609,14 +609,28 @@ distance (in feet) to inches, yards, and miles."""
 
 """Write a Python program to calculate body mass index."""
 
-#  muscle isn't accounted for so BMI is inaccurate :)
-weight = float(input("Please enter your weight in pounds: "))
-height = float(input("Please enter your height: "))
+# #  muscle isn't accounted for so BMI is inaccurate :)
+# weight = float(input("Please enter your weight in pounds: "))
+# height = float(input("Please enter your height: "))
+#
+# height_to_inches = (height * 12)
+#
+# calculate = ((weight / height_to_inches / height_to_inches) * 703)
+#
+# print("Your BMI is: {}".format(round(calculate, 2)))
 
-height_to_inches = (height * 12)
 
-calculate = ((weight / height_to_inches / height_to_inches) * 703)
+"""Write a Python program to convert pressure in kilopascals to pounds
+ per square inch, a millimeter of mercury (mmHg) and atmosphere pressure."""
 
-print("Your BMI is: {}".format(round(calculate, 2)))
+
+kilopascals = float(input("Enter a value for kilopascals: "))
+
+psi = round(kilopascals * 0.145, 3)
+mmhg = round(kilopascals * 7.501, 3)
+ap = round(kilopascals / 101, 4)
+
+print("{} KPA = {}: PSI, {}: mmHg, {}: AP".format(kilopascals, psi, mmhg, ap))
+
 
 
