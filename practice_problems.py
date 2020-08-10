@@ -710,17 +710,33 @@ distance (in feet) to inches, yards, and miles."""
 
 """Write a Python program to calculate midpoints of a line."""
 
-x_start = float(input("The first point of the line: "))
-y_start = float(input("The first point of the line: "))
+# x_start = float(input("The first point of the line: "))
+# y_start = float(input("The first point of the line: "))
+#
+# x2_start = float(input("The endpoint of the line: "))
+# y2_start = float(input("The endpoint of the line: "))
+#
+# midpoint = (x_start + x2_start) / 2
+# midpoint_2 = (y_start + y2_start) / 2
+#
+#
+# print("The midpoint for x is: {}".format(midpoint))
+# print("The midpoint for y is: {}".format(midpoint_2))
 
-x2_start = float(input("The endpoint of the line: "))
-y2_start = float(input("The endpoint of the line: "))
 
-midpoint = (x_start + x2_start) / 2
-midpoint_2 = (y_start + y2_start) / 2
+"""Write a Python program to hash a word."""
 
+soundex=[0,1,2,3,0,1,2,0,0,2,2,4,5,5,0,1,2,6,2,3,0,1,0,2,0,2]
 
-print("The midpoint for x is: {}".format(midpoint))
-print("The midpoint for y is: {}".format(midpoint_2))
+word=input("Input the word be hashed: ")
 
+word=word.upper()
 
+coded=word[0]
+
+for a in word[1:len(word)]:
+    i = 65-ord(a)
+    coded=coded+str(soundex[i])
+print()
+print("The coded word is: "+coded)
+print()
