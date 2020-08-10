@@ -853,11 +853,19 @@ distance (in feet) to inches, yards, and miles."""
 """Write a Python program to check whether a string is numeric. """
 
 
-my_string = "It was very hot outside today."
-my_string_2 = "1995"
+# my_string = "It was very hot outside today."
+# my_string_2 = "1995"
+#
+# is_string = my_string.isnumeric()
+# is_string_2 = my_string_2.isnumeric()
+#
+# print(is_string)
+# print(is_string_2)
 
-is_string = my_string.isnumeric()
-is_string_2 = my_string_2.isnumeric()
 
-print(is_string)
-print(is_string_2)
+"""Write a Python program to get the system time."""
+import time
+
+this_time = time.ctime()
+print(this_time)
+
