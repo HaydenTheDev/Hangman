@@ -834,8 +834,18 @@ distance (in feet) to inches, yards, and miles."""
 
 """Write a Python program to swap two variables."""
 
-x = 34
-y = 56
-print("x = {} and y = {}".format(x, y))
-x, y = y, x
-print("x = {} and y = {}".format(x, y))
+# x = 34
+# y = 56
+# print("x = {} and y = {}".format(x, y))
+# x, y = y, x
+# print("x = {} and y = {}".format(x, y))
+
+
+
+"""Write a Python program to convert a byte string to a list of integers."""
+
+
+x = b'abcgsiodugosugs98w7598237520392ugowih(^&&*^%*&('
+print()
+print(list(x))
+print()
