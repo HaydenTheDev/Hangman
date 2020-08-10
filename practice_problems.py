@@ -758,7 +758,24 @@ distance (in feet) to inches, yards, and miles."""
 
 """Write a Python program to calculate the sum over a container."""
 
-container = sum([10, 20, 30])
-print("Sum of the container is:", container)
+# container = sum([10, 20, 30])
+# print("Sum of the container is:", container)
+
+"""Write a Python program to test whether all numbers of a
+ list is greater than a certain number."""
+
+
+numbers_list = [3, 4, 5, 6, 12, 15, 7]
+
+num1 = all(x > 16 for x in numbers_list)
+num2 = all(x > 2 for x in numbers_list)
+print(num1)
+print(num2)
+
+
+
+
+
+
 
 
