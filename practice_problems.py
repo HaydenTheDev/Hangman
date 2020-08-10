@@ -806,7 +806,36 @@ distance (in feet) to inches, yards, and miles."""
 
 """Write a Python program to get the size of a file."""
 
-import os
-file_size = os.path.getsize('name.txt')
-print("\nThe size of name.txt is: ", file_size, "Bytes")
-print()
+# import os
+#
+# file_size = os.path.getsize("bobs_burger.txt")
+# print("The size of this file is: ", file_size, "Bytes")
+
+
+"""Given variables x=30 and y=20,
+ write a Python program to print t "30+20=50"""
+
+# x = 30
+# y = 20
+#
+# result = y + x
+#
+# print("{} + {} = {}".format(x, y, result))
+
+
+"""Given a variable name, if the value is 1, display the string 
+"First day of a Month!" and do nothing if the value is not equal."""
+
+# value = 1
+#
+# if value == 1:
+#     print("First day of the Month!")
+
+
+"""Write a Python program to swap two variables."""
+
+x = 34
+y = 56
+print("x = {} and y = {}".format(x, y))
+x, y = y, x
+print("x = {} and y = {}".format(x, y))
