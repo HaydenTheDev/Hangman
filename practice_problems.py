@@ -699,11 +699,28 @@ distance (in feet) to inches, yards, and miles."""
 
 """Write a Python program to get the details of math module."""
 
+#
+# import math
+#
+# math_details = dir(math)
+# print(math_details)
+#
+# print(math.__doc__)
 
-import math
 
-math_details = dir(math)
-print(math_details)
+"""Write a Python program to calculate midpoints of a line."""
 
-print(math.__doc__)
+x_start = float(input("The first point of the line: "))
+y_start = float(input("The first point of the line: "))
+
+x2_start = float(input("The endpoint of the line: "))
+y2_start = float(input("The endpoint of the line: "))
+
+midpoint = (x_start + x2_start) / 2
+midpoint_2 = (y_start + y2_start) / 2
+
+
+print("The midpoint for x is: {}".format(midpoint))
+print("The midpoint for y is: {}".format(midpoint_2))
+
 
