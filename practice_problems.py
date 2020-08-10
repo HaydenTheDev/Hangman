@@ -726,17 +726,33 @@ distance (in feet) to inches, yards, and miles."""
 
 """Write a Python program to hash a word."""
 
-soundex=[0,1,2,3,0,1,2,0,0,2,2,4,5,5,0,1,2,6,2,3,0,1,0,2,0,2]
+# soundex=[0,1,2,3,0,1,2,0,0,2,2,4,5,5,0,1,2,6,2,3,0,1,0,2,0,2]
+#
+# word=input("Input the word be hashed: ")
+#
+# word=word.upper()
+#
+# coded=word[0]
+#
+# for a in word[1:len(word)]:
+#     i = 65-ord(a)
+#     coded=coded+str(soundex[i])
+# print()
+# print("The coded word is: "+coded)
+# print()
 
-word=input("Input the word be hashed: ")
+"""Write a Python program to get the copyright information."""
+# import sys
+# print("\nPython Copyright Information")
+# print(sys.copyright)
+# print()
 
-word=word.upper()
 
-coded=word[0]
+"""Write a Python program to concatenate N strings."""
 
-for a in word[1:len(word)]:
-    i = 65-ord(a)
-    coded=coded+str(soundex[i])
-print()
-print("The coded word is: "+coded)
-print()
+colors_list = ["White", "Blue", "Red", "Green", "Grey"]
+
+con_list = '-'.join(colors_list)
+print(con_list)
+
+
