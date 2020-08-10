@@ -763,16 +763,35 @@ distance (in feet) to inches, yards, and miles."""
 
 """Write a Python program to test whether all numbers of a
  list is greater than a certain number."""
+#
+#
+# numbers_list = [3, 4, 5, 6, 12, 15, 7]
+#
+# num1 = all(x > 16 for x in numbers_list)
+# num2 = all(x > 2 for x in numbers_list)
+# print(num1)
+# print(num2)
 
 
-numbers_list = [3, 4, 5, 6, 12, 15, 7]
-
-num1 = all(x > 16 for x in numbers_list)
-num2 = all(x > 2 for x in numbers_list)
-print(num1)
-print(num2)
+"""Write a Python program to count the number
+ occurrence of a specific character in a string."""
 
 
+my_string = "This is my string for now."
+value = 0
+for char in my_string:
+    if char == 'o':
+        value += 1
+
+print(value)
+
+# other way
+
+my_string = "This is my string for now."
+
+print()
+print(my_string.count("i"))
+print()
 
 
 
