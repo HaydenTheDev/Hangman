@@ -872,12 +872,24 @@ distance (in feet) to inches, yards, and miles."""
 
 """Write a Python program to check if a number
  is positive, negative or zero."""
+#
+# user_input = int(input("Please enter a number: "))
+#
+# if user_input == 0:
+#     print("This number is zero.")
+# elif user_input > 0:
+#     print("This number is positive.")
+# elif user_input < 0:
+#     print("This number is negative.")
 
-user_input = int(input("Please enter a number: "))
+"""Write a Python program to get numbers divisible
+ by fifteen from a list using an anonymous function."""
 
-if user_input == 0:
-    print("This number is zero.")
-elif user_input > 0:
-    print("This number is positive.")
-elif user_input < 0:
-    print("This number is negative.")
+
+num_list = [45, 55, 37, 60, 100, 105, 220]
+
+result = list(filter(lambda x: (x % 15 == 0), num_list))
+print("Numbers divisible by 15 are", result)
+
+
+
