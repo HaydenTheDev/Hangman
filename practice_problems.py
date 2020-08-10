@@ -776,25 +776,29 @@ distance (in feet) to inches, yards, and miles."""
 """Write a Python program to count the number
  occurrence of a specific character in a string."""
 
+#
+# my_string = "This is my string for now."
+# value = 0
+# for char in my_string:
+#     if char == 'o':
+#         value += 1
+#
+# print(value)
+#
+# # other way
+#
+# my_string = "This is my string for now."
+#
+# print()
+# print(my_string.count("i"))
+# print()
 
-my_string = "This is my string for now."
-value = 0
-for char in my_string:
-    if char == 'o':
-        value += 1
 
-print(value)
-
-# other way
-
-my_string = "This is my string for now."
+"""Write a Python program to get the ASCII value of a character."""
 
 print()
-print(my_string.count("i"))
+print(ord('a'))
+print(ord('A'))
+print(ord('1'))
+print(ord('@'))
 print()
-
-
-
-
-
-
