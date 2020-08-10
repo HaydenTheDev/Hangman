@@ -624,13 +624,31 @@ distance (in feet) to inches, yards, and miles."""
  per square inch, a millimeter of mercury (mmHg) and atmosphere pressure."""
 
 
-kilopascals = float(input("Enter a value for kilopascals: "))
+# kilopascals = float(input("Enter a value for kilopascals: "))
+#
+# psi = round(kilopascals * 0.145, 3)
+# mmhg = round(kilopascals * 7.501, 3)
+# ap = round(kilopascals / 101, 4)
+#
+# print("{} KPA = {}: PSI, {}: mmHg, {}: AP".format(kilopascals, psi, mmhg, ap))
 
-psi = round(kilopascals * 0.145, 3)
-mmhg = round(kilopascals * 7.501, 3)
-ap = round(kilopascals / 101, 4)
 
-print("{} KPA = {}: PSI, {}: mmHg, {}: AP".format(kilopascals, psi, mmhg, ap))
+"""Write a Python program to calculate the sum of the digits in an integer"""
+
+num = int(input("Please enter a four digit number:  "))
+
+x = num // 1000
+x1 = (num - x*1000)//100
+x2 = (num - x*1000 - x1*100)//10
+x3 = num - x*1000 - x1*100 - x2*10
+print("The sum of digits in the number is", x+x1+x2+x3)
+
+print(x)
+print(x1)
+print(x2)
+print(x3)
+
+
 
 
 
