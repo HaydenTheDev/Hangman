@@ -750,9 +750,15 @@ distance (in feet) to inches, yards, and miles."""
 
 """Write a Python program to concatenate N strings."""
 
-colors_list = ["White", "Blue", "Red", "Green", "Grey"]
+# colors_list = ["White", "Blue", "Red", "Green", "Grey"]
+#
+# con_list = '-'.join(colors_list)
+# print(con_list)
 
-con_list = '-'.join(colors_list)
-print(con_list)
+
+"""Write a Python program to calculate the sum over a container."""
+
+container = sum([10, 20, 30])
+print("Sum of the container is:", container)
 
 
