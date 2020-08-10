@@ -595,12 +595,28 @@ distance (in feet) to inches, yards, and miles."""
  hour, minutes and seconds."""
 
 
-time = float(input("Input time in seconds: "))
-day = time // (24 * 3600)
-time = time % (24 * 3600)
-hour = time // 3600
-time %= 3600
-minutes = time // 60
-time %= 60
-seconds = time
-print("d:h:m:s-> %d:%d:%d:%d" % (day, hour, minutes, seconds))
+# time = float(input("Input time in seconds: "))
+# day = time // (24 * 3600)
+# time = time % (24 * 3600)
+# hour = time // 3600
+# time %= 3600
+# minutes = time // 60
+# time %= 60
+# seconds = time
+# print("d:h:m:s-> %d:%d:%d:%d" % (day, hour, minutes, seconds))
+# print(hour)
+
+
+"""Write a Python program to calculate body mass index."""
+
+#  muscle isn't accounted for so BMI is inaccurate :)
+weight = float(input("Please enter your weight in pounds: "))
+height = float(input("Please enter your height: "))
+
+height_to_inches = (height * 12)
+
+calculate = ((weight / height_to_inches / height_to_inches) * 703)
+
+print("Your BMI is: {}".format(round(calculate, 2)))
+
+
