@@ -635,18 +635,35 @@ distance (in feet) to inches, yards, and miles."""
 
 """Write a Python program to calculate the sum of the digits in an integer"""
 
-num = int(input("Please enter a four digit number:  "))
+# num = int(input("Please enter a four digit number:  "))
+#
+# x = num // 1000
+# x1 = (num - x*1000)//100
+# x2 = (num - x*1000 - x1*100)//10
+# x3 = num - x*1000 - x1*100 - x2*10
+# print("The sum of digits in the number is", x+x1+x2+x3)
 
-x = num // 1000
-x1 = (num - x*1000)//100
-x2 = (num - x*1000 - x1*100)//10
-x3 = num - x*1000 - x1*100 - x2*10
-print("The sum of digits in the number is", x+x1+x2+x3)
 
-print(x)
-print(x1)
-print(x2)
-print(x3)
+"""Write a Python program to sort three integers without
+ using conditional statements and loops."""
+
+
+numbers = (input("Please enter digits: "))
+
+my_str = numbers + ""
+
+sorted_numbers = sorted(my_str)
+
+num_1 = sorted_numbers[0]
+num_2 = sorted_numbers[1]
+num_3 = sorted_numbers[2]
+num_4 = sorted_numbers[3]
+
+print(num_1)
+print(num_2)
+print(num_3)
+print(num_4)
+
 
 
 
