@@ -864,8 +864,20 @@ distance (in feet) to inches, yards, and miles."""
 
 
 """Write a Python program to get the system time."""
-import time
+# import time
+#
+# this_time = time.ctime()
+# print(this_time)
 
-this_time = time.ctime()
-print(this_time)
 
+"""Write a Python program to check if a number
+ is positive, negative or zero."""
+
+user_input = int(input("Please enter a number: "))
+
+if user_input == 0:
+    print("This number is zero.")
+elif user_input > 0:
+    print("This number is positive.")
+elif user_input < 0:
+    print("This number is negative.")
