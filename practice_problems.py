@@ -647,25 +647,34 @@ distance (in feet) to inches, yards, and miles."""
 """Write a Python program to sort three integers without
  using conditional statements and loops."""
 
-
-numbers = (input("Please enter digits: "))
-
-my_str = numbers + ""
-
-sorted_numbers = sorted(my_str)
-
-num_1 = sorted_numbers[0]
-num_2 = sorted_numbers[1]
-num_3 = sorted_numbers[2]
-num_4 = sorted_numbers[3]
-
-print(num_1)
-print(num_2)
-print(num_3)
-print(num_4)
-
-
+#
+# numbers = (input("Please enter digits: "))
+#
+# my_str = numbers + ""
+#
+# sorted_numbers = sorted(my_str)
+#
+# num_1 = sorted_numbers[0]
+# num_2 = sorted_numbers[1]
+# num_3 = sorted_numbers[2]
+# num_4 = sorted_numbers[3]
+#
+# print(num_1)
+# print(num_2)
+# print(num_3)
+# print(num_4)
 
 
+"""Write a Python program to sort files by date."""
+import glob
+import os
 
+new_file = open("bobs_burger.txt", 'w')
+new_file.write("This show is alright.")
+new_file.close()
+
+
+files = glob.glob("*.txt")
+files.sort(key=os.path.getmtime)
+print("\n".join(files))
 
