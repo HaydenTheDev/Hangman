@@ -936,7 +936,26 @@ distance (in feet) to inches, yards, and miles."""
  to limit the number of characters to 6."""
 
 
-string_amount = "This is a new string."
-print('%.6s' % string_amount) #string only prints 6 characters
+# string_amount = "This is a new string."
+# print('%.6s' % string_amount) #string only prints 6 characters
+
+
+"""Write a Python program to determine whether variable is defined or not."""
+# success
+
+try:
+    x = 6
+except NameError:
+    print("This variable is not defined yet.")
+else:
+    print("x has been defined to: ", x)
+
+#  error
+try:
+    y
+except NameError:
+    print("This variable has not been defined yet.")
+else:
+    print("y has been defined.")
 
 
