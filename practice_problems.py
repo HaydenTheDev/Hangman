@@ -911,10 +911,18 @@ distance (in feet) to inches, yards, and miles."""
 
 """Write a Python program to filter the positive numbers from a list. """
 
-numbers_list = [3, 4, 6, -5, 8, -12, -11, 10]
-print("This is the first list of numbers: ", numbers_list)
-new_numbers = list(filter(lambda x: x > 0, numbers_list))
-print("Updated numbers list with only positives: ", new_numbers)
+# numbers_list = [3, 4, 6, -5, 8, -12, -11, 10]
+# print("This is the first list of numbers: ", numbers_list)
+# new_numbers = list(filter(lambda x: x > 0, numbers_list))
+# print("Updated numbers list with only positives: ", new_numbers)
+
+
+"""Write a Python program to compute the product
+ of a list of integers (without using for loop)."""
+from functools import reduce
+numbers_list = [2, 4, 45, 2450]
+numbers_product = reduce((lambda x, y: x * y), numbers_list)
+print("Product of the numbers: ", numbers_product)
 
 
 
