@@ -919,12 +919,17 @@ distance (in feet) to inches, yards, and miles."""
 
 """Write a Python program to compute the product
  of a list of integers (without using for loop)."""
-from functools import reduce
-numbers_list = [2, 4, 45, 2450]
-numbers_product = reduce((lambda x, y: x * y), numbers_list)
-print("Product of the numbers: ", numbers_product)
+# from functools import reduce
+# numbers_list = [2, 4, 45, 2450]
+# numbers_product = reduce((lambda x, y: x * y), numbers_list)
+# print("Product of the numbers: ", numbers_product)
 
 
+"""Write a Python program to display a floating number in specified numbers."""
+
+order_amount = 212.374
+print('\nThe total order amount comes to %f' % order_amount)
+print('\nThe total order amount comes to %.2f' % order_amount)
 
 
 
