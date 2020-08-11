@@ -885,11 +885,17 @@ distance (in feet) to inches, yards, and miles."""
 """Write a Python program to get numbers divisible
  by fifteen from a list using an anonymous function."""
 
+#
+# num_list = [45, 55, 37, 60, 100, 105, 220]
+#
+# result = list(filter(lambda x: (x % 15 == 0), num_list))
+# print("Numbers divisible by 15 are", result)
 
-num_list = [45, 55, 37, 60, 100, 105, 220]
+"""Write a Python program to remove the first item from a specified list."""
 
-result = list(filter(lambda x: (x % 15 == 0), num_list))
-print("Numbers divisible by 15 are", result)
+my_list = ["LoL", "Battlefield", "Halo", "WoW", "Rs"]
 
+del my_list[0]
+print(my_list)
 
 
