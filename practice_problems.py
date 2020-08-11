@@ -927,9 +927,16 @@ distance (in feet) to inches, yards, and miles."""
 
 """Write a Python program to display a floating number in specified numbers."""
 
-order_amount = 212.374
-print('\nThe total order amount comes to %f' % order_amount)
-print('\nThe total order amount comes to %.2f' % order_amount)
+# order_amount = 212.374
+# print('\nThe total order amount comes to %f' % order_amount)
+# print('\nThe total order amount comes to %.2f' % order_amount)
 
+
+"""Write a Python program to format a specified string
+ to limit the number of characters to 6."""
+
+
+string_amount = "This is a new string."
+print('%.6s' % string_amount) #string only prints 6 characters
 
 
