@@ -901,12 +901,21 @@ distance (in feet) to inches, yards, and miles."""
 """Write a Python program to input a number,
  if it is not a number generate an error message."""
 
-while True:
-    try:
-        user_input = int(input("Please enter a number:  "))
-        break
-    except ValueError:
-        print("This is not a number...Try again.")
+# while True:
+#     try:
+#         user_input = int(input("Please enter a number:  "))
+#         break
+#     except ValueError:
+#         print("This is not a number...Try again.")
+
+
+"""Write a Python program to filter the positive numbers from a list. """
+
+numbers_list = [3, 4, 6, -5, 8, -12, -11, 10]
+print("This is the first list of numbers: ", numbers_list)
+new_numbers = list(filter(lambda x: x > 0, numbers_list))
+print("Updated numbers list with only positives: ", new_numbers)
+
 
 
 
