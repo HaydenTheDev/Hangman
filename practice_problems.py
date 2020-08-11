@@ -893,9 +893,21 @@ distance (in feet) to inches, yards, and miles."""
 
 """Write a Python program to remove the first item from a specified list."""
 
-my_list = ["LoL", "Battlefield", "Halo", "WoW", "Rs"]
+# my_list = ["LoL", "Battlefield", "Halo", "WoW", "Rs"]
+#
+# del my_list[0]
+# print(my_list)
 
-del my_list[0]
-print(my_list)
+"""Write a Python program to input a number,
+ if it is not a number generate an error message."""
+
+while True:
+    try:
+        user_input = int(input("Please enter a number:  "))
+        break
+    except ValueError:
+        print("This is not a number...Try again.")
+
+
 
 
