@@ -976,8 +976,19 @@ distance (in feet) to inches, yards, and miles."""
 largest and smallest integers, longs, floats. """
 
 
+# import sys
+# print("Float value information: ", sys.float_info)
+# print("\nInteger value information: ", sys.int_info)
+# print("\nMaximum value information: ", sys.maxsize)
 
-import sys
-print("Float value information: ", sys.float_info)
-print("\nInteger value information: ", sys.int_info)
-print("\nMaximum value information: ", sys.maxsize)
+
+"""Write a Python program to check whether
+ multiple variables have the same value. """
+
+
+x = 20
+y = 20
+z = 20
+
+if x == y == z == 20:
+    print("All the values are equal.")
