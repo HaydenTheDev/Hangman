@@ -962,11 +962,22 @@ distance (in feet) to inches, yards, and miles."""
 """Write a Python program to empty a variable without destroying it"""
 
 
-n = 20
-d = {"x":200}
-l = [1,3,5]
-t= (5,7,8)
-print(type(n)())
-print(type(d)())
-print(type(l)())
-print(type(t)())
+# n = 20
+# d = {"x":200}
+# l = [1,3,5]
+# t= (5,7,8)
+# print(type(n)())
+# print(type(d)())
+# print(type(l)())
+# print(type(t)())
+
+
+"""Write a Python program to determine the 
+largest and smallest integers, longs, floats. """
+
+
+
+import sys
+print("Float value information: ", sys.float_info)
+print("\nInteger value information: ", sys.int_info)
+print("\nMaximum value information: ", sys.maxsize)
