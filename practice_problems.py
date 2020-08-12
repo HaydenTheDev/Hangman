@@ -943,19 +943,30 @@ distance (in feet) to inches, yards, and miles."""
 """Write a Python program to determine whether variable is defined or not."""
 # success
 
-try:
-    x = 6
-except NameError:
-    print("This variable is not defined yet.")
-else:
-    print("x has been defined to: ", x)
+# try:
+#     x = 6
+# except NameError:
+#     print("This variable is not defined yet.")
+# else:
+#     print("x has been defined to: ", x)
+#
+# #  error
+# try:
+#     y
+# except NameError:
+#     print("This variable has not been defined yet.")
+# else:
+#     print("y has been defined.")
 
-#  error
-try:
-    y
-except NameError:
-    print("This variable has not been defined yet.")
-else:
-    print("y has been defined.")
+
+"""Write a Python program to empty a variable without destroying it"""
 
 
+n = 20
+d = {"x":200}
+l = [1,3,5]
+t= (5,7,8)
+print(type(n)())
+print(type(d)())
+print(type(l)())
+print(type(t)())
